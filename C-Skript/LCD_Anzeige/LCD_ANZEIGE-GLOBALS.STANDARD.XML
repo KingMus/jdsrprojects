@@ -1,0 +1,26 @@
+<aoffile Header="LCD_ANZEIGE" Path="">
+ <Def>
+  <Col Header="DeclFile" Desc="File"/>
+  <Col Header="Type" Desc="Type"/>
+  <Col Header="Header" Desc="Name"/>
+ </Def>
+ <define Header="LOCAL_GENERIC" Icon ="4" Type="define" Info=":   #define LOCAL_GENERIC   generic" Desc="#define LOCAL_GENERIC   generic" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\MAIN_C51.h" DeclLine="20"/>
+ <define Header="__SMALL" Icon ="4" Type="define" Info=":   #define __SMALL   1" Desc="#define __SMALL   1" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="29"/>
+ <define Header="NULL" Icon ="4" Type="define" Info=":   #define NULL   0L" Desc="#define NULL   0L" DeclFile="C:\Programme\Ride_7\Ride\Inc\stdarg.h" DeclLine="27"/>
+ <define Header="Sbit" Icon ="4" Type="define" Info=":   #define Sbit(x, y, z)   sbit x = y ^ z" Desc="#define Sbit(x, y, z)   sbit x = y ^ z" DeclFile="C:\Programme\Ride_7\Ride\inc\51\Atmel\at89c5131.h" DeclLine="20"/>
+ <define Header="va_arg" Icon ="4" Type="define" Info=":   #define va_arg(ap, t)   ( * ( t __Stack_Space__ * ) ( ( ap -= sizeof ( t ) ) + 1 ) )" Desc="#define va_arg(ap, t)   ( * ( t __Stack_Space__ * ) ( ( ap -= sizeof ( t ) ) + 1 ) )" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\MAIN_C51.h" DeclLine="91"/>
+ <define Header="PM_PD" Icon ="4" Type="define" Info=":   #define PM_PD   0x02" Desc="#define PM_PD   0x02" DeclFile="C:\Programme\Ride_7\Ride\inc\51\Atmel\at89c5131.h" DeclLine="38"/>
+ <define Header="va_start" Icon ="4" Type="define" Info=":   #define va_start(ap, v)   ap = ( va_list ) ( __SP__ - __STARTPOS__ )" Desc="#define va_start(ap, v)   ap = ( va_list ) ( __SP__ - __STARTPOS__ )" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\MAIN_C51.h" DeclLine="90"/>
+ <define Header="va_end" Icon ="4" Type="define" Info=":   #define va_end(ap)   ( ( void ) 0 )" Desc="#define va_end(ap)   ( ( void ) 0 )" DeclFile="C:\Programme\Ride_7\Ride\Inc\stdarg.h" DeclLine="54"/>
+ <define Header="__TINY" Icon ="4" Type="define" Info=":   #define __TINY   0" Desc="#define __TINY   0" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="28"/>
+ <define Header="EOF" Icon ="4" Type="define" Info=":   #define EOF   - 1" Desc="#define EOF   - 1" DeclFile="C:\Programme\Ride_7\Ride\Inc\stdio.h" DeclLine="32"/>
+ <define Header="__LARGE" Icon ="4" Type="define" Info=":   #define __LARGE   4" Desc="#define __LARGE   4" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="32"/>
+ <define Header="__MEDIUM" Icon ="4" Type="define" Info=":   #define __MEDIUM   3" Desc="#define __MEDIUM   3" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="31"/>
+ <define Header="__COMPACT" Icon ="4" Type="define" Info=":   #define __COMPACT   2" Desc="#define __COMPACT   2" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="30"/>
+ <define Header="__Stack_Space__" Icon ="4" Type="define" Info=":   #define __Stack_Space__   idata" Desc="#define __Stack_Space__   idata" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\MAIN_C51.h" DeclLine="88"/>
+ <define Header="LCD_PORT" Icon ="4" Type="define" Info=":   #define LCD_PORT   P0" Desc="#define LCD_PORT   P0" DeclFile="lcd.c" DeclLine="10"/>
+ <define Header="Sfr" Icon ="4" Type="define" Info=":   #define Sfr(x, y)   sfr x = y" Desc="#define Sfr(x, y)   sfr x = y" DeclFile="C:\Programme\Ride_7\Ride\inc\51\Atmel\at89c5131.h" DeclLine="18"/>
+ <define Header="PM_IDL" Icon ="4" Type="define" Info=":   #define PM_IDL   0x01" Desc="#define PM_IDL   0x01" DeclFile="C:\Programme\Ride_7\Ride\inc\51\Atmel\at89c5131.h" DeclLine="39"/>
+ <define Header="Sfr16" Icon ="4" Type="define" Info=":   #define Sfr16(x, y)   sfr16 x = y" Desc="#define Sfr16(x, y)   sfr16 x = y" DeclFile="C:\Programme\Ride_7\Ride\inc\51\Atmel\at89c5131.h" DeclLine="19"/>
+ <define Header="__HUGE" Icon ="4" Type="define" Info=":   #define __HUGE   5" Desc="#define __HUGE   5" DeclFile="C:\Programme\Ride_7\Ride\Inc\51\INTRI51.h" DeclLine="33"/>
+</aoffile>

@@ -1,0 +1,28 @@
+<aoffile FileName="PROGRAMM_AUFGABE_1">
+   <modulelist>
+      <module Name="PROGRAMM_AUFGABE_1" Origin="OBJ(G:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\PROGRAMM_AUFGABE_1\PROGRAMM_AUFGABE_1.OBJ)">
+      <filelist>
+         <file FI="0001"  Time="00000000"  FName="G:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch\Programm_Aufgabe_1\Programm_Aufgabe_1.c"/>
+         <file FI="0002"  Time="00000000"  FName="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h"/>
+         <file FI="0003"  Time="00000000"  FName="G:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch\Programm_Aufgabe_1\Programm_Aufgabe_1.lst"/>
+      </filelist>
+      <macrolist>
+         <macro Name="_REG5131_H_" ArgNum="00" ProtoName="_REG5131_H_" Equivalency="" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="9" />
+         <macro Name="Sbit" ArgNum="03" ProtoName="Sbit(x, y, z)" Equivalency="sbit x = y ^ z" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="20" />
+         <macro Name="PM_PD" ArgNum="00" ProtoName="PM_PD" Equivalency="0x02" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="38" />
+         <macro Name="Sfr" ArgNum="02" ProtoName="Sfr(x, y)" Equivalency="sfr x = y" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="18" />
+         <macro Name="PM_IDL" ArgNum="00" ProtoName="PM_IDL" Equivalency="0x01" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="39" />
+         <macro Name="Sfr16" ArgNum="02" ProtoName="Sfr16(x, y)" Equivalency="sfr16 x = y" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="19" />
+      </macrolist>
+      <typelist>
+         <type TI="0x0" Family="Function" String="void ()" ReturnTI="0xb" ParamTI="0x0"/>
+      </typelist>
+      </module>
+      <module Name="C3S" Origin="LIB(C:\Program Files (x86)\Raisonance\Ride\Lib\51\RC51S.LIB)">
+      </module>
+      <module Name="HPD" Origin="LIB(C:\Program Files (x86)\Raisonance\Ride\Lib\51\RC51S.LIB)">
+      </module>
+      <module Name="_C_IDATALEN" Origin="LIB(C:\Program Files (x86)\Raisonance\Ride\Lib\51\RC51S.LIB)">
+      </module>
+   </modulelist>
+</aoffile>

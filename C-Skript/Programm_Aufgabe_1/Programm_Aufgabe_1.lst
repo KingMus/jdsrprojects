@@ -1,0 +1,89 @@
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1    09/11/14  11:08:12  PAGE  1
+            -
+
+QCW(0x00002F32)
+
+DOS RC51 COMPILER V03.04.10.125, COMPILATION OF MODULE PROGRAMM_AUFGABE_1
+OBJECT MODULE PLACED IN G:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur
+            - Busch\Programm_Aufgabe_1\Programm_Aufgabe_1.obj
+COMPILER INVOKED BY: QUIET GENERATEDEPFILE OJ(G:\Dokumente und Dateien\Schule un
+            -d so\TGI\TGI-J2\Arthur Busch\Programm_Aufgabe_1\Programm_Aufgabe_1.
+            -obj) PIN(C:\Program Files (x86)\Raisonance\Ride\Inc;C:\Program File
+            -s (x86)\Raisonance\Ride\Inc\51) PIN(C:\Program Files (x86)\Raisonan
+            -ce\Ride\\inc\51\Atmel) NOAM CD PR(G:\Dokumente und Dateien\Schule u
+            -nd so\TGI\TGI-J2\Arthur Busch\Programm_Aufgabe_1\Programm_Aufgabe_1
+            -.lst) FP(NOFLOAT) IP NOIS UNSIGNEDCHAR ET(CHAR) PR PL(60) PW(80) OE
+            -(1) OT(7,SPEED) RB(0) MAXERR(25) MAXWAR(25) SM MOD517(NODP8,NOAU) 
+
+stmt level    source
+   1          #include <at89c5131.h> //Initialisierung
+   2          sfr at P2 Ausgabe;
+   3          sbit at P3_2 UP;
+   4          unsigned int i; //Variablendeklaration
+   5          void main (void) //----------- Hauptprogramm ---------------------
+            -------------
+   6          {
+   7   1      Ausgabe = 0;
+   8   1      while(1)
+   9   1      {
+  10   2      if (!UP)
+  11   2      {
+  12   3      Ausgabe++;
+  13   3      if (Ausgabe == 10)
+  14   3      {
+  15   4      Ausgabe = 0;
+  16   4      }
+  17   3      }
+  18   2      for (i=0x8fff;i!=0;i--);
+  19   2      } // Ende while(1)
+  20   1      } // Ende main 
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1    09/11/14  11:08:12  PAGE  2
+            -
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+            ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 7 
+0000 75A000         MOV    Ausgabe,#000H
+0003         ?WHILE1:
+                                           ; SOURCE LINE # 10 
+0003 20B20A         JB     UP,?NXT6
+                                           ; SOURCE LINE # 12 
+0006 05A0           INC    Ausgabe
+                                           ; SOURCE LINE # 13 
+0008 E5A0           MOV    A,Ausgabe
+000A B40A03         CJNE   A,#00AH,?NXT6
+                                           ; SOURCE LINE # 15 
+000D 75A000         MOV    Ausgabe,#000H
+0010         ?NXT6:
+                                           ; SOURCE LINE # 18 
+0010 75008F  R      MOV    i,#08FH
+0013 7500FF  R      MOV    i+01H,#0FFH
+0016         ?FOR1:
+0016 E500    R      MOV    A,i
+0018 4500    R      ORL    A,i+01H
+001A 60E7           JZ     ?WHILE1
+001C E500    R      MOV    A,i+01H
+001E 1500    R      DEC    i+01H
+0020 70F4           JNZ    ?FOR1
+0022 1500    R      DEC    i
+0024 80F0           SJMP   ?FOR1
+
+            ; FUNCTION main (END)
+
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1    09/11/14  11:08:13  PAGE  3
+            -
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     38    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+RC51 COMPILATION COMPLETE.  0 WARNING,  0 ERROR

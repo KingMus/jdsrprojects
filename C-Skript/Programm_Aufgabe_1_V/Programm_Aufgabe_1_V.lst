@@ -1,0 +1,107 @@
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1_V    09/23/14  08:37:40  PAGE 
+            - 1
+
+QCW(0x00002F32)
+
+DOS RC51 COMPILER V03.04.10.125, COMPILATION OF MODULE PROGRAMM_AUFGABE_1_V
+OBJECT MODULE PLACED IN F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur
+            - Busch\C-Skript\Programm_Aufgabe_1_V\Programm_Aufgabe_1_V.obj
+COMPILER INVOKED BY: QUIET GENERATEDEPFILE OJ(F:\Dokumente und Dateien\Schule un
+            -d so\TGI\TGI-J2\Arthur Busch\C-Skript\Programm_Aufgabe_1_V\Programm
+            -_Aufgabe_1_V.obj) PIN(C:\Programme\Ride_7\Ride\Inc;C:\Programme\Rid
+            -e_7\Ride\Inc\51) PIN(C:\Programme\Ride_7\Ride\\inc\51\Atmel) NOAM C
+            -D PR(F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch
+            -\C-Skript\Programm_Aufgabe_1_V\Programm_Aufgabe_1_V.lst) FP(NOFLOAT
+            -) IP NOIS UNSIGNEDCHAR ET(CHAR) PR PL(60) PW(80) OE(1) OT(7,SPEED) 
+            -RB(0) MAXERR(25) MAXWAR(25) SM MOD517(NODP8,NOAU) 
+
+stmt level    source
+   1          #include <at89c5131.h> //Initialisierung
+   2          sfr at P2 Ausgabe;
+   3          sbit at P3_2 UP;
+   4          unsigned int i; //Variablendeklaration
+   5          void main (void) //----------- Hauptprogramm ---------------------
+            -------------
+   6          {
+   7   1      Ausgabe = 0;
+   8   1      while(1)
+   9   1      {
+  10   2      if (!UP) //Wenn Taster P3.2 gedrückt
+  11   2      {
+  12   3      Ausgabe++; //P2 erhöhen bis 10 erreicht
+  13   3      if (Ausgabe == 10) 
+  14   3      {
+  15   4      Ausgabe = 0; // Wenn 10 erreicht auf 0 setzen
+  16   4      }
+  17   3      }
+  18   2      if (UP) //Wenn Taster P3.2 nicht gedrückt
+  19   2      {
+  20   3      Ausgabe--; //P2 erhöhen bis 0 erreicht
+  21   3      if (Ausgabe == 0) 
+  22   3      {
+  23   4      Ausgabe = 10; // Wenn 0 erreicht auf 10 setzen
+  24   4      }
+  25   3      }
+  26   2      for (i=0x8fff;i!=0;i--); //Zeitschleife
+  27   2      } // Ende while(1)
+  28   1      } // Ende main 
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1_V    09/23/14  08:37:40  PAGE 
+            - 2
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+            ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 7 
+0000 75A000         MOV    Ausgabe,#000H
+0003         ?WHILE1:
+                                           ; SOURCE LINE # 10 
+0003 20B20A         JB     UP,?NXT8
+                                           ; SOURCE LINE # 12 
+0006 05A0           INC    Ausgabe
+                                           ; SOURCE LINE # 13 
+0008 E5A0           MOV    A,Ausgabe
+000A B40A03         CJNE   A,#00AH,?NXT8
+                                           ; SOURCE LINE # 15 
+000D 75A000         MOV    Ausgabe,#000H
+0010         ?NXT8:
+                                           ; SOURCE LINE # 18 
+0010 30B209         JNB    UP,?NXT10
+                                           ; SOURCE LINE # 20 
+0013 15A0           DEC    Ausgabe
+                                           ; SOURCE LINE # 21 
+0015 E5A0           MOV    A,Ausgabe
+0017 7003           JNZ    ?NXT10
+                                           ; SOURCE LINE # 23 
+0019 75A00A         MOV    Ausgabe,#00AH
+001C         ?NXT10:
+                                           ; SOURCE LINE # 26 
+001C 75008F  R      MOV    i,#08FH
+001F 7500FF  R      MOV    i+01H,#0FFH
+0022         ?FOR1:
+0022 E500    R      MOV    A,i
+0024 4500    R      ORL    A,i+01H
+0026 60DB           JZ     ?WHILE1
+0028 E500    R      MOV    A,i+01H
+002A 1500    R      DEC    i+01H
+002C 70F4           JNZ    ?FOR1
+002E 1500    R      DEC    i
+0030 80F0           SJMP   ?FOR1
+
+            ; FUNCTION main (END)
+
+RC51 COMPILER V03.04.10.125,  PROGRAMM_AUFGABE_1_V    09/23/14  08:37:40  PAGE 
+            - 3
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     50    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+RC51 COMPILATION COMPLETE.  0 WARNING,  0 ERROR

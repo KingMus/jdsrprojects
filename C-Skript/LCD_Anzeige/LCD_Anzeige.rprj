@@ -1,0 +1,4 @@
+
+<Project Header="Project 'LCD_Anzeige'" Path=".\LCD_Anzeige.rprj" Project="Yes" AsyncBuild="" OutputFile="" sate="96" ActiveApp="LCD_Anzeige" >
+	<ApplicationBuild Header="LCD_Anzeige" Extern=".\LCD_Anzeige.rapp" Path=".\LCD_Anzeige.rapp" AsyncBuild="" OutputFile=".\LCD_Anzeige.aof" sate="98" />
+</Project>

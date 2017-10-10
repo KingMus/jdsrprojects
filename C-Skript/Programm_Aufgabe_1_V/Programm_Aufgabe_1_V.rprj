@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Programm_Aufgabe_1_V'" Path=".\Programm_Aufgabe_1_V.rprj" Project="Yes" AsyncBuild="" OutputFile="" sate="96" ActiveApp="Programm_Aufgabe_1_V" >
+	<ApplicationBuild Header="Programm_Aufgabe_1_V" Extern=".\Programm_Aufgabe_1_V.rapp" Path=".\Programm_Aufgabe_1_V.rapp" AsyncBuild="" OutputFile=".\Programm_Aufgabe_1_V.aof" sate="98" />
+</Project>

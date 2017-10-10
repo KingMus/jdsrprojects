@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 6.1 
+PROJECT ODER_Tabelle
+DESIGN oder_tabelle Normal
+DEVKIT LC4128V-10T100I
+ENTRY ABEL/Schematic
+MODULE oder_tabelle.abl
+MODSTYLE ODER_Tabelle Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE ODER_Tabelle

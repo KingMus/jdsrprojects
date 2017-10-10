@@ -1,0 +1,27 @@
+
+<ApplicationBuild Header="Programm_Aufgabe_1_V" Extern=".\Programm_Aufgabe_1_V.rapp" Path=".\Programm_Aufgabe_1_V.rapp" AsyncBuild="" OutputFile=".\Programm_Aufgabe_1_V.aof" sate="98" >
+	<NodeC Path=".\Programm_Aufgabe_1_V.c" Header="Programm_Aufgabe_1_V.c" Marker="-1" AsyncBuild="" OutputFile=".\Programm_Aufgabe_1_V.obj" sate="0" />
+	<Options>
+		<Config Header="Standard" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="General" >
+					<Property Header="TargetFamily" Value="80C51" />
+																																		
+				</Section>
+																										
+			</Set>
+			<Set Header="Target" >
+				<Section Header="Processor80C51" >
+					<Property Header="Processor" Value="AT89C5131" Removable="1" />
+																																		
+				</Section>
+				<Section Header="ToolSet80C51" >
+					<Property Header="BuildToolSet80C51" Value="80C51\\RaisonanceTools.config" Removable="1" />
+					<Property Header="ArelocInfo" Value="" Removable="1" />
+							
+				</Section>
+					
+			</Set>
+		</Config>
+	</Options>
+</ApplicationBuild>

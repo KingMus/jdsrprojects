@@ -1,0 +1,336 @@
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  1
+
+QCW(0x00002F32)
+
+DOS RC51 COMPILER V03.04.10.125, COMPILATION OF MODULE LCD_ANZEIGE
+OBJECT MODULE PLACED IN F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur
+            - Busch\C-Skript\LCD_Anzeige\LCD_Anzeige.obj
+COMPILER INVOKED BY: QUIET GENERATEDEPFILE OJ(F:\Dokumente und Dateien\Schule un
+            -d so\TGI\TGI-J2\Arthur Busch\C-Skript\LCD_Anzeige\LCD_Anzeige.obj) 
+            -PIN(C:\Programme\Ride_7\Ride\Inc;C:\Programme\Ride_7\Ride\Inc\51) P
+            -IN(C:\Programme\Ride_7\Ride\\inc\51\Atmel) NOAM CD PR(F:\Dokumente 
+            -und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch\C-Skript\LCD_Anze
+            -ige\LCD_Anzeige.lst) FP(NOFLOAT) IP NOIS UNSIGNEDCHAR ET(CHAR) PR P
+            -L(60) PW(80) OE(1) OT(7,SPEED) RB(0) MAXERR(25) MAXWAR(25) SM MOD51
+            -7(NODP8,NOAU) 
+
+stmt level    source
+   1          #include <at89c5131.h> //Initialisierung
+   2          #include "lcd.c"
+   3          #include "stdio.h"
+   4          
+   5          void main (void)
+   6          {
+   7   1      extern void initlcd(void);
+   8   1      printf("JDSR");
+   9   1      
+  10   1      
+  11   1      } // Ende main 
+  12          
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  6
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+            ; FUNCTION _warte100u (BEGIN)
+              ; Register R7 is assigned to parameter anzahl
+              ; R6 is assigned to z1
+              ; R5 is assigned to z2
+                                           ; SOURCE LINE # 26 
+0000 8F05           MOV    AR5,R7
+0002         ?FOR2:
+0002 ED             MOV    A,R5
+0003 6003           JZ     ?NXT4
+0005         ?NXT7:
+0005 1D             DEC    R5
+0006 80FA           SJMP   ?FOR2
+0008         ?NXT4:
+                                           ; SOURCE LINE # 30 
+0008 22             RET    
+
+            ; FUNCTION _warte100u (END)
+
+            ; FUNCTION _LCDbefehl (BEGIN)
+              ; Register R7 is assigned to parameter befehl
+              ; R6 is assigned to a1
+                                           ; SOURCE LINE # 40 
+0000 75F004         MOV    B,#004H
+0003 EF             MOV    A,R7
+0004         ?LAB4:
+0004 23             RL     A
+0005 D5F0FC         DJNZ   B,?LAB4
+                                           ; SOURCE LINE # 41 
+0008 540F           ANL    A,#00FH
+000A 4410           ORL    A,#010H
+                                           ; SOURCE LINE # 42 
+000C F580           MOV    P0,A
+                                           ; SOURCE LINE # 43 
+000E 758000         MOV    P0,#000H
+              ; R6 is assigned to a1
+                                           ; SOURCE LINE # 45 
+0011 EF             MOV    A,R7
+0012 540F           ANL    A,#00FH
+0014 4410           ORL    A,#010H
+                                           ; SOURCE LINE # 46 
+0016 F580           MOV    P0,A
+                                           ; SOURCE LINE # 47 
+0018 758000         MOV    P0,#000H
+                                           ; SOURCE LINE # 62 
+001B 7F0A           MOV    R7,#00AH
+001D 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 63 
+0020 22             RET    
+
+            ; FUNCTION _LCDbefehl (END)
+
+            ; FUNCTION _definierelcdsymbol (BEGIN)
+                                           ; SOURCE LINE # 68 
+0000 8B00    R      MOV    pixelprozeile,R3
+0002 8A00    R      MOV    pixelprozeile+01H,R2
+0004 8900    R      MOV    pixelprozeile+02H,R1
+0006 8D00    R      MOV    adr,R5
+                                           ; SOURCE LINE # 70 
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  2
+
+0008 E500    R      MOV    A,adr
+000A B40800         CJNE   A,#008H,?LAB16
+000D         ?LAB16:
+000D E4             CLR    A
+000E 5001           JNC    ?LAB15
+0010 04             INC    A
+0011         ?LAB15:
+0011 FB             MOV    R3,A
+0012 E500    R      MOV    A,adr
+0014 B40001         CJNE   A,#000H,?LAB19
+0017 D3             SETB   C
+0018         ?LAB19:
+0018 E4             CLR    A
+0019 4001           JC     ?LAB18
+001B 04             INC    A
+001C         ?LAB18:
+001C FF             MOV    R7,A
+001D EB             MOV    A,R3
+001E 5F             ANL    A,R7
+001F 600E           JZ     ?NXT12
+                                           ; SOURCE LINE # 71 
+0021 E500    R      MOV    A,adr
+0023 75F008         MOV    B,#008H
+0026 A4             MUL    AB
+0027 547F           ANL    A,#07FH
+0029 4440           ORL    A,#040H
+002B FF             MOV    R7,A
+002C 120000  R      LCALL  _LCDbefehl
+002F         ?NXT12:
+                                           ; SOURCE LINE # 74 
+002F 750000  R      MOV    z,#000H
+0032         ?FOR5:
+0032 AB00    R      MOV    R3,pixelprozeile
+0034 AA00    R      MOV    R2,pixelprozeile+01H
+0036 A900    R      MOV    R1,pixelprozeile+02H
+0038 758300         MOV    DPH,#00000H
+003B 850082  R      MOV    DPL,z
+003E 120000  R      LCALL  MV_PTR2C1?C
+0041 FF             MOV    R7,A
+0042 120000  R      LCALL  _charlcd
+0045 0500    R      INC    z
+0047 E500    R      MOV    A,z
+0049 B408E6         CJNE   A,#008H,?FOR5
+                                           ; SOURCE LINE # 75 
+004C E4             CLR    A
+004D FF             MOV    R7,A
+004E 120000  R      LCALL  _cursorpos
+                                           ; SOURCE LINE # 76 
+0051 22             RET    
+
+            ; FUNCTION _definierelcdsymbol (END)
+
+            ; FUNCTION initlcd (BEGIN)
+                                           ; SOURCE LINE # 83 
+0000 758013         MOV    P0,#013H
+                                           ; SOURCE LINE # 84 
+0003 758003         MOV    P0,#003H
+                                           ; SOURCE LINE # 85 
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  3
+
+0006 7F32           MOV    R7,#032H
+0008 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 86 
+000B 758013         MOV    P0,#013H
+                                           ; SOURCE LINE # 87 
+000E 758003         MOV    P0,#003H
+                                           ; SOURCE LINE # 88 
+0011 7F01           MOV    R7,#001H
+0013 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 89 
+0016 758013         MOV    P0,#013H
+                                           ; SOURCE LINE # 90 
+0019 758003         MOV    P0,#003H
+                                           ; SOURCE LINE # 91 
+001C 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 92 
+001F 758012         MOV    P0,#012H
+                                           ; SOURCE LINE # 93 
+0022 758002         MOV    P0,#002H
+                                           ; SOURCE LINE # 94 
+0025 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 95 
+0028 7F28           MOV    R7,#028H
+002A 120000  R      LCALL  _LCDbefehl
+                                           ; SOURCE LINE # 96 
+002D 7F0C           MOV    R7,#00CH
+002F 120000  R      LCALL  _LCDbefehl
+                                           ; SOURCE LINE # 97 
+0032 7F06           MOV    R7,#006H
+0034 120000  R      LCALL  _LCDbefehl
+                                           ; SOURCE LINE # 98 
+0037 22             RET    
+
+            ; FUNCTION initlcd (END)
+
+            ; FUNCTION loeschenlcd (BEGIN)
+                                           ; SOURCE LINE # 104 
+0000 7F01           MOV    R7,#001H
+0002 120000  R      LCALL  _LCDbefehl
+0005 22             RET    
+
+            ; FUNCTION loeschenlcd (END)
+
+            ; FUNCTION _charlcd (BEGIN)
+              ; Register R7 is assigned to parameter zeichen
+              ; R6 is assigned to a1
+                                           ; SOURCE LINE # 115 
+0000 75F004         MOV    B,#004H
+0003 EF             MOV    A,R7
+0004         ?LAB28:
+0004 23             RL     A
+0005 D5F0FC         DJNZ   B,?LAB28
+                                           ; SOURCE LINE # 117 
+0008 540F           ANL    A,#00FH
+000A 4490           ORL    A,#090H
+                                           ; SOURCE LINE # 118 
+000C F580           MOV    P0,A
+                                           ; SOURCE LINE # 119 
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  4
+
+000E 5480           ANL    A,#080H
+0010 F580           MOV    P0,A
+              ; R6 is assigned to a1
+                                           ; SOURCE LINE # 121 
+0012 EF             MOV    A,R7
+0013 540F           ANL    A,#00FH
+0015 4490           ORL    A,#090H
+                                           ; SOURCE LINE # 122 
+0017 F580           MOV    P0,A
+                                           ; SOURCE LINE # 123 
+0019 5480           ANL    A,#080H
+001B F580           MOV    P0,A
+                                           ; SOURCE LINE # 138 
+001D 7F0A           MOV    R7,#00AH
+001F 120000  R      LCALL  _warte100u
+                                           ; SOURCE LINE # 139 
+0022 22             RET    
+
+            ; FUNCTION _charlcd (END)
+
+            ; FUNCTION _cursorpos (BEGIN)
+              ; Register R7 is assigned to parameter position
+                                           ; SOURCE LINE # 148 
+0000 EF             MOV    A,R7
+0001 4480           ORL    A,#080H
+0003 FF             MOV    R7,A
+0004 120000  R      LCALL  _LCDbefehl
+0007 22             RET    
+
+            ; FUNCTION _cursorpos (END)
+
+            ; FUNCTION cursorhome (BEGIN)
+                                           ; SOURCE LINE # 154 
+0000 7F02           MOV    R7,#002H
+0002 120000  R      LCALL  _LCDbefehl
+0005 22             RET    
+
+            ; FUNCTION cursorhome (END)
+
+            ; FUNCTION _textlcd (BEGIN)
+                                           ; SOURCE LINE # 159 
+0000 8B00    R      MOV    text,R3
+0002 8A00    R      MOV    text+01H,R2
+0004 8900    R      MOV    text+02H,R1
+0006 8D00    R      MOV    zeile,R5
+                                           ; SOURCE LINE # 161 
+0008 E500    R      MOV    A,zeile
+000A B40105         CJNE   A,#001H,?NXT21
+000D E4             CLR    A
+000E FF             MOV    R7,A
+000F 120000  R      LCALL  _cursorpos
+0012         ?NXT21:
+                                           ; SOURCE LINE # 162 
+0012 E500    R      MOV    A,zeile
+0014 B40205         CJNE   A,#002H,?NXT22
+0017 7F40           MOV    R7,#040H
+0019 120000  R      LCALL  _cursorpos
+001C         ?NXT22:
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:45  PAGE  5
+
+                                           ; SOURCE LINE # 163 
+001C E500    R      MOV    A,zeile
+001E B40305         CJNE   A,#003H,?NXT23
+0021 7F10           MOV    R7,#010H
+0023 120000  R      LCALL  _cursorpos
+0026         ?NXT23:
+                                           ; SOURCE LINE # 164 
+0026 E500    R      MOV    A,zeile
+0028 B40405         CJNE   A,#004H,?WHILE1
+002B 7F50           MOV    R7,#050H
+002D 120000  R      LCALL  _cursorpos
+0030         ?WHILE1:
+                                           ; SOURCE LINE # 165 
+0030 AB00    R      MOV    R3,text
+0032 AA00    R      MOV    R2,text+01H
+0034 A900    R      MOV    R1,text+02H
+0036 120000  R      LCALL  IPGN1?C
+0039 6017           JZ     ?NXT25
+                                           ; SOURCE LINE # 166 
+003B AB00    R      MOV    R3,text
+003D AA00    R      MOV    R2,text+01H
+003F A900    R      MOV    R1,text+02H
+0041 0500    R      INC    text+02H
+0043 E500    R      MOV    A,text+02H
+0045 7002           JNZ    ?LAB36
+0047 0500    R      INC    text+01H
+0049         ?LAB36:
+0049 120000  R      LCALL  IPGN1?C
+004C FF             MOV    R7,A
+004D 120000  R      LCALL  _charlcd
+0050 80DE           SJMP   ?WHILE1
+0052         ?NXT25:
+                                           ; SOURCE LINE # 167 
+0052 22             RET    
+
+            ; FUNCTION _textlcd (END)
+
+            ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 8 
+0000 7B05           MOV    R3,#005H
+0002 7A00    R      MOV    R2,#HIGH(?STR?LCD_ANZEIGE?BASE)
+0004 7900    R      MOV    R1,#LOW(?STR?LCD_ANZEIGE?BASE)
+0006 120000  R      LCALL  ?printf
+                                           ; SOURCE LINE # 11 
+0009 22             RET    
+
+            ; FUNCTION main (END)
+
+RC51 COMPILER V03.04.10.125,  LCD_ANZEIGE        09/23/14  08:50:46  PAGE  7
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    328    ----
+   CONSTANT SIZE    =      5    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       5
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+RC51 COMPILATION COMPLETE.  0 WARNING,  0 ERROR

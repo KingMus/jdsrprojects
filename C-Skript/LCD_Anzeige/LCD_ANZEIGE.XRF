@@ -1,0 +1,33 @@
+MS-DOS LX51 CODE BANKING LINKER/LOCATOR V05.02.10.125
+
+
+INTER-MODULE CROSS-REFERENCE LISTING
+------------------------------------
+
+          NAME. . . . . . . . USAGE   MODULE NAMES
+          ----------------------------------------
+          ?C_START2 . . . . . CODE    [C2S]:  LCD_ANZEIGE
+          ?printf0  . . . . . CODE    [PRINT0]:  LCD_ANZEIGE
+          ?puts . . . . . . . CODE    [PUTS]: 
+          cursorhome  . . . . CODE    [LCD_ANZEIGE]: 
+          HPD_ADDR  . . . . . DATA    [HPD]:  C2S
+          IDATALEN  . . . . . NUMBER  [_C_IDATALEN]:  C2S
+          initlcd . . . . . . CODE    [LCD_ANZEIGE]: 
+          IPGN1?C . . . . . . CODE    [IPGN1]:  IPGN1_INC, MV_PTR2C1, LCD_ANZEIGE
+          IPGN1INC?C  . . . . CODE    [IPGN1_INC]:  PUTS
+          loeschenlcd . . . . CODE    [LCD_ANZEIGE]: 
+          main  . . . . . . . CODE    [LCD_ANZEIGE]:  C2S
+          MV_PTR2C1?C . . . . CODE    [MV_PTR2C1]:  LCD_ANZEIGE
+          TIM1_INIT . . . . . NUMBER  [_C_ITIM1]:  C2S
+          XSTACKLEN . . . . . NUMBER  [** UNRESOLVED **]:
+          _charlcd  . . . . . CODE    [LCD_ANZEIGE]:  LCD_ANZEIGE
+          _cursorpos  . . . . CODE    [LCD_ANZEIGE]:  LCD_ANZEIGE
+          _definierelcdsymbol CODE    [LCD_ANZEIGE]: 
+          _INITP2?  . . . . . NUMBER  [_C_IDATALEN]:  C2S
+          _LCDbefehl  . . . . CODE    [LCD_ANZEIGE]: 
+          _putchar  . . . . . CODE    [PUTCHAR]:  PUTS
+          _STACK  . . . . . . IDATA   [LCD_ANZEIGE]:  C2S
+          _textlcd  . . . . . CODE    [LCD_ANZEIGE]: 
+          _warte100u  . . . . CODE    [LCD_ANZEIGE]: 
+          __PGN1_INC__  . . . CODE    [PGN1_INC]:  IPGN1_INC
+          __PUTS_NXT1__ . . . CODE    [PUTS]:  PRINT0

@@ -1,0 +1,12 @@
+<aoffile Header="PROGRAMM_AUFGABE_1" Path="">
+ <Def>
+  <Col Header="DeclFile" Desc="File"/>
+  <Col Header="Type" Desc="Type"/>
+  <Col Header="Header" Desc="Name"/>
+ </Def>
+ <define Header="Sbit" Icon ="4" Type="define" Info=":   #define Sbit(x, y, z)   sbit x = y ^ z" Desc="#define Sbit(x, y, z)   sbit x = y ^ z" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="20"/>
+ <define Header="PM_PD" Icon ="4" Type="define" Info=":   #define PM_PD   0x02" Desc="#define PM_PD   0x02" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="38"/>
+ <define Header="Sfr" Icon ="4" Type="define" Info=":   #define Sfr(x, y)   sfr x = y" Desc="#define Sfr(x, y)   sfr x = y" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="18"/>
+ <define Header="PM_IDL" Icon ="4" Type="define" Info=":   #define PM_IDL   0x01" Desc="#define PM_IDL   0x01" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="39"/>
+ <define Header="Sfr16" Icon ="4" Type="define" Info=":   #define Sfr16(x, y)   sfr16 x = y" Desc="#define Sfr16(x, y)   sfr16 x = y" DeclFile="C:\Program Files (x86)\Raisonance\Ride\inc\51\Atmel\at89c5131.h" DeclLine="19"/>
+</aoffile>

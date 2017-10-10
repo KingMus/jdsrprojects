@@ -1,0 +1,461 @@
+LX51 CODE BANKING LINKER/LOCATOR V05.02.10.125                                 09/23/14  08:50:46
+MS-DOS LX51 CODE BANKING LINKER/LOCATOR V05.02.10.125,  INVOKED BY:
+C:\Programme\Ride_7\Ride\Bin\LX51.EXE F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Bu&
+sch\C-Skript\LCD_Anzeige\LCD_Anzeige.obj TO(F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Art&
+hur Busch\C-Skript\LCD_Anzeige\LCD_Anzeige.aof) LIBPATH(C:\Programme\Ride_7\Ride\Lib\51) GENERATE&
+DEPFILE MAP IX RS(256) RSI(128) CSIZE(65536) XSIZE(65536) DEFN(XSTACKLEN,256) DEFN(TIM1_INIT,E8h)&
+ CO(0) DT(0) ID(0) XD(0) BI(0) ABSCODEOFFS(0) XMLM(No,F:\Dokumente und Dateien\Schule und so\TGI\&
+TGI-J2\Arthur Busch\C-Skript\LCD_Anzeige\LCD_Anzeige-modules.Standard.xml) XMLF(No,8000,F:\Dokume&
+nte und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch\C-Skript\LCD_Anzeige\LCD_Anzeige-flash.Stan&
+dard.xml) XML(F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch\C-Skript\LCD_Anzeige&
+\LCD_Anzeige.Standard.xml) XMLRIDE(F:\Dokumente und Dateien\Schule und so\TGI\TGI-J2\Arthur Busch&
+\C-Skript\LCD_Anzeige\LCD_Anzeige-globals.Standard.xml) 
+
+
+MEMORY MODEL: SMALL WITHOUT ANY FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED
+  F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE&
+.OBJ(LCD_ANZEIGE)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(C2S)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(IPGN1)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(MV_PTR2C1)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(PRINT0)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(_C_ITIM1)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(HPD)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(_C_IDATALEN)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(PUTS)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(PUTCHAR)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(IPGN1_INC)
+  C:\Programme\Ride_7\Ride\Lib\51\RC51S.LIB(PGN1_INC)
+
+
+LINK MAP OF MODULE: F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_A&
+NZEIGE\LCD_ANZEIGE.AOF (LCD_ANZEIGE)
+
+    TYPE     BASE       LENGTH    RELOCATION     SEGMENT NAME
+    ----     ----       ------    ----------     ------------
+
+    * * * * * * *   DATA/IDATA    M E M O R Y   * * * * * * *
+    REG      0000H      0008H     ABSOLUTE       "REG BANK 0"
+    DATA     0008H      0005H     OVERLAID UNIT  _DGROUP00_
+             0008H      0005H     -------------  ?DT?_definierelcdsymbol?LCD_ANZEIGE
+    DATA     000DH      0004H     OVERLAID UNIT  _DGROUP04_
+             000DH      0004H     -------------  ?DT?_textlcd?LCD_ANZEIGE
+    IDATA    0011H      0001H     * * STACK * *  _STACK
+
+    * * * * * * *   CODE          M E M O R Y   * * * * * * *
+    CODE     0000H      0003H     ABSOLUTE       
+    CODE     0003H      0049H     INBLOCK        ?PR?MOVES?LIB51
+    CODE     004CH      0013H     UNIT           ?PR?PUTCHAR?LIB51
+    CODE     005FH      001DH     UNIT           ?PR?PUTS?LIB51
+    CODE     007CH      0005H     UNIT           ?PR?LIB51
+    CODE     0081H      001BH     UNIT           ?PR?C51_STARTUP?
+    CODE     009CH      0009H     UNIT           ?PR?_warte100u?LCD_ANZEIGE
+    CODE     00A5H      0021H     UNIT           ?PR?_LCDbefehl?LCD_ANZEIGE
+    CODE     00C6H      0052H     UNIT           ?PR?_definierelcdsymbol?LCD_ANZEIGE
+    CODE     0118H      0038H     UNIT           ?PR?initlcd?LCD_ANZEIGE
+    CODE     0150H      0006H     UNIT           ?PR?loeschenlcd?LCD_ANZEIGE
+    CODE     0156H      0023H     UNIT           ?PR?_charlcd?LCD_ANZEIGE
+    CODE     0179H      0008H     UNIT           ?PR?_cursorpos?LCD_ANZEIGE
+    CODE     0181H      0006H     UNIT           ?PR?cursorhome?LCD_ANZEIGE
+    CODE     0187H      0053H     UNIT           ?PR?_textlcd?LCD_ANZEIGE
+    CODE     01DAH      0005H     UNIT           ?STR?LCD_ANZEIGE
+    CODE     01DFH      000AH     UNIT           ?PR?main?LCD_ANZEIGE
+
+EXECUTABLE SUMMARY:
+-------------------
+    Total INTERNAL RAM storage requirement:  0011H (17)
+    Total EXTERNAL RAM storage requirement:  0000H (0)
+    Total     CODE     storage requirement:  01E9H (489)
+Note:  Summary does not include dynamic stack requirements
+
+
+REFERENCE MAP OF MODULE: F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_A&
+NZEIGE.AOF (LCD_ANZEIGE)
+
+SEGMENT                           BI_GROUP            DT_GROUP             ID_GROUP             XD_GROUP
+  +--> CALLED SEGMENT          START    LENGTH     START    LENGTH     START    LENGTH     START    LENGTH
+--------------------------------------------------------------------------------------
+
+?PR?_definierelcdsymbol?LCD_ANZEIGE--------------- 0008H    0005H      ---------------     ---------------
+  +--> ?PR?_charlcd?LCD_ANZEIGE
+  +--> ?PR?_cursorpos?LCD_ANZEIGE
+  +--> ?PR?_LCDbefehl?LCD_ANZEIGE
+
+?PR?_charlcd?LCD_ANZEIGE       ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_warte100u?LCD_ANZEIGE
+
+?PR?_warte100u?LCD_ANZEIGE     ---------------     ---------------     ---------------     ---------------
+
+?PR?_cursorpos?LCD_ANZEIGE     ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_LCDbefehl?LCD_ANZEIGE
+
+?PR?_LCDbefehl?LCD_ANZEIGE     ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_warte100u?LCD_ANZEIGE
+
+?PR?initlcd?LCD_ANZEIGE        ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_LCDbefehl?LCD_ANZEIGE
+  +--> ?PR?_warte100u?LCD_ANZEIGE
+
+?PR?loeschenlcd?LCD_ANZEIGE    ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_LCDbefehl?LCD_ANZEIGE
+
+?PR?cursorhome?LCD_ANZEIGE     ---------------     ---------------     ---------------     ---------------
+  +--> ?PR?_LCDbefehl?LCD_ANZEIGE
+
+?PR?_textlcd?LCD_ANZEIGE       ---------------     000DH    0004H      ---------------     ---------------
+  +--> ?PR?_charlcd?LCD_ANZEIGE
+  +--> ?PR?_cursorpos?LCD_ANZEIGE
+
+?PR?main?LCD_ANZEIGE           ---------------     ---------------     ---------------     ---------------
+
+SYMBOL TABLE FOR F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZE&
+IGE\LCD_ANZEIGE.AOF(LCD_ANZEIGE)
+-------------------------------------------------------------------------------------------------&
+---------------------------------
+
+    VALUE              TYPE               NAME
+    -----              ----               ----
+
+	-------            MODULE             LCD_Anzeige
+	C:0000H            SYMBOL             _ICE_DUMMY_
+	C:01DFH            PUBLIC             main
+	C:0181H            PUBLIC             cursorhome
+	C:0150H            PUBLIC             loeschenlcd
+	C:009CH            PUBLIC             _warte100u
+	C:0179H            PUBLIC             _cursorpos
+	C:0156H            PUBLIC             _charlcd
+	C:00A5H            PUBLIC             _LCDbefehl
+	C:00C6H            PUBLIC             _definierelcdsymbol
+	C:0187H            PUBLIC             _textlcd
+	C:0118H            PUBLIC             initlcd
+	D:0081H            SYMBOL             __SP__
+	D:00D2H            SYMBOL             EECON
+	D:00D1H            SYMBOL             FCON
+	D:00F1H            SYMBOL             LEDCON
+	D:0085H            SYMBOL             CKSEL
+	D:00AFH            SYMBOL             CKCON1
+	D:008FH            SYMBOL             CKCON0
+	D:00A2H            SYMBOL             AUXR1
+	D:008EH            SYMBOL             AUXR
+	D:0087H            SYMBOL             PCON
+	B:00F8H            SYMBOL             EP0INT
+	B:00F9H            SYMBOL             EP1INT
+	B:00FAH            SYMBOL             EP2INT
+	B:00FBH            SYMBOL             EP3INT
+	B:00FCH            SYMBOL             EP4INT
+	B:00FDH            SYMBOL             EP5INT
+	B:00FEH            SYMBOL             EP6INT
+	D:00BBH            SYMBOL             UFNUMH
+	D:00BAH            SYMBOL             UFNUML
+	D:00D7H            SYMBOL             UDPADDH
+	D:00D6H            SYMBOL             UDPADDL
+	D:00E3H            SYMBOL             UBYCTHX
+	D:00E2H            SYMBOL             UBYCTLX
+	D:00CFH            SYMBOL             UEPDATX
+	D:00C2H            SYMBOL             UEPIEN
+	D:00F8H            SYMBOL             UEPINT
+	D:00D5H            SYMBOL             UEPRST
+	D:00CEH            SYMBOL             UEPSTAX
+	D:00D4H            SYMBOL             UEPCONX
+	D:00C7H            SYMBOL             UEPNUM
+	D:00BEH            SYMBOL             USBIEN
+	D:00BDH            SYMBOL             USBINT
+	D:00C6H            SYMBOL             USBADDR
+	D:00BCH            SYMBOL             USBCON
+	D:00C5H            SYMBOL             SPDAT
+	D:00C4H            SYMBOL             SPSTA
+	D:00C3H            SYMBOL             SPCON
+	D:0096H            SYMBOL             SSADR
+	D:0095H            SYMBOL             SSDAT
+	D:0094H            SYMBOL             SSCS
+	D:0093H            SYMBOL             SSCON
+	D:009CH            SYMBOL             KBLS
+	D:009DH            SYMBOL             KBE
+	D:009EH            SYMBOL             KBF
+	D:00A4H            SYMBOL             PLLDIV
+	D:00A3H            SYMBOL             PLLCON
+	B:00B8H            SYMBOL             PX0L
+	B:00B9H            SYMBOL             PT0L
+	B:00BAH            SYMBOL             PXIL
+	B:00BBH            SYMBOL             PTIL
+	B:00BCH            SYMBOL             PSL
+	B:00BDH            SYMBOL             PT2L
+	B:00BEH            SYMBOL             PPCL
+	B:00A8H            SYMBOL             EX0
+	B:00A9H            SYMBOL             ET0
+	B:00AAH            SYMBOL             EX1
+	B:00ABH            SYMBOL             ET1
+	B:00ACH            SYMBOL             ES
+	B:00ADH            SYMBOL             ET2
+	B:00AEH            SYMBOL             EC
+	B:00AFH            SYMBOL             EA
+	D:00B3H            SYMBOL             IPH1
+	D:00B2H            SYMBOL             IPL1
+	D:00B7H            SYMBOL             IPH0
+	D:00B8H            SYMBOL             IPL0
+	D:00B1H            SYMBOL             IE1
+	D:00A8H            SYMBOL             IE0
+	B:00D8H            SYMBOL             CCF0
+	B:00D9H            SYMBOL             CCF1
+	B:00DAH            SYMBOL             CCF2
+	B:00DBH            SYMBOL             CCF3
+	B:00DCH            SYMBOL             CCF4
+	B:00DEH            SYMBOL             CR
+	B:00DFH            SYMBOL             CF
+	D:00EEH            SYMBOL             CCAP4L
+	D:00EDH            SYMBOL             CCAP3L
+	D:00ECH            SYMBOL             CCAP2L
+	D:00EBH            SYMBOL             CCAP1L
+	D:00EAH            SYMBOL             CCAP0L
+	D:00FEH            SYMBOL             CCAP4H
+	D:00FDH            SYMBOL             CCAP3H
+	D:00FCH            SYMBOL             CCAP2H
+	D:00FBH            SYMBOL             CCAP1H
+	D:00FAH            SYMBOL             CCAP0H
+	D:00DEH            SYMBOL             CCAPM4
+	D:00DDH            SYMBOL             CCAPM3
+	D:00DCH            SYMBOL             CCAPM2
+	D:00DBH            SYMBOL             CCAPM1
+	D:00DAH            SYMBOL             CCAPM0
+	D:00F9H            SYMBOL             CH
+	D:00E9H            SYMBOL             CL
+	D:00D9H            SYMBOL             CMOD
+	D:00D8H            SYMBOL             CCON
+	D:009BH            SYMBOL             BDRCON
+	D:009AH            SYMBOL             BRL
+	B:0098H            SYMBOL             RI
+	B:0099H            SYMBOL             TI
+	B:009AH            SYMBOL             RB8
+	B:009BH            SYMBOL             TB8
+	B:009CH            SYMBOL             REN
+	B:009DH            SYMBOL             SM2
+	B:009EH            SYMBOL             SM1
+	B:009FH            SYMBOL             FE_SM0
+	D:00A9H            SYMBOL             SADDR
+	D:00B9H            SYMBOL             SADEN
+	D:0099H            SYMBOL             SBUF
+	D:0098H            SYMBOL             SCON
+	B:00C8H            SYMBOL             CP_RL2
+	B:00C9H            SYMBOL             C_T2
+	B:00CAH            SYMBOL             TR2
+	B:00CBH            SYMBOL             EXEN2
+	B:00CCH            SYMBOL             TCLK
+	B:00CDH            SYMBOL             RCLK
+	B:00CEH            SYMBOL             EXF2
+	B:00CFH            SYMBOL             TF2
+	B:0088H            SYMBOL             IT0
+	B:0089H            SYMBOL             IE0_
+	B:008AH            SYMBOL             IT1
+	B:008BH            SYMBOL             IE1_
+	B:008CH            SYMBOL             TR0
+	B:008DH            SYMBOL             TF0
+	B:008EH            SYMBOL             TR1
+	B:008FH            SYMBOL             TF1
+	D:00A7H            SYMBOL             WDTPRG
+	D:00A6H            SYMBOL             WDTRST
+	D:00CAH            SYMBOL             RCAP2L
+	D:00CBH            SYMBOL             RCAP2H
+	D:00C9H            SYMBOL             T2MOD
+	D:00C8H            SYMBOL             T2CON
+	D:0089H            SYMBOL             TMOD
+	D:0088H            SYMBOL             TCON
+	D:00CCH            SYMBOL             TL2
+	D:00CDH            SYMBOL             TH2
+	D:008BH            SYMBOL             TL1
+	D:008DH            SYMBOL             TH1
+	D:008AH            SYMBOL             TL0
+	D:008CH            SYMBOL             TH0
+	B:00C0H            SYMBOL             P4_0
+	B:00C1H            SYMBOL             P4_1
+	D:00C0H            SYMBOL             P4
+	B:00B0H            SYMBOL             P3_0
+	B:00B1H            SYMBOL             P3_1
+	B:00B2H            SYMBOL             P3_2
+	B:00B3H            SYMBOL             P3_3
+	B:00B4H            SYMBOL             P3_4
+	B:00B5H            SYMBOL             P3_5
+	B:00B6H            SYMBOL             P3_6
+	B:00B7H            SYMBOL             P3_7
+	D:00B0H            SYMBOL             P3
+	B:00A0H            SYMBOL             P2_0
+	B:00A1H            SYMBOL             P2_1
+	B:00A2H            SYMBOL             P2_2
+	B:00A3H            SYMBOL             P2_3
+	B:00A4H            SYMBOL             P2_4
+	B:00A5H            SYMBOL             P2_5
+	B:00A6H            SYMBOL             P2_6
+	B:00A7H            SYMBOL             P2_7
+	D:00A0H            SYMBOL             P2
+	B:0090H            SYMBOL             P1_0
+	B:0091H            SYMBOL             P1_1
+	B:0092H            SYMBOL             P1_2
+	B:0093H            SYMBOL             P1_3
+	B:0094H            SYMBOL             P1_4
+	B:0095H            SYMBOL             P1_5
+	B:0096H            SYMBOL             P1_6
+	B:0097H            SYMBOL             P1_7
+	D:0090H            SYMBOL             P1
+	B:0080H            SYMBOL             P0_0
+	B:0081H            SYMBOL             P0_1
+	B:0082H            SYMBOL             P0_2
+	B:0083H            SYMBOL             P0_3
+	B:0084H            SYMBOL             P0_4
+	B:0085H            SYMBOL             P0_5
+	B:0086H            SYMBOL             P0_6
+	B:0087H            SYMBOL             P0_7
+	D:0080H            SYMBOL             P0
+	D:0082H            SYMBOL             DPTR
+	D:0083H            SYMBOL             DPH
+	D:0082H            SYMBOL             DPL
+	D:0081H            SYMBOL             SP
+	D:00D0H            SYMBOL             PSW
+	D:00F0H            SYMBOL             B
+	D:00E0H            SYMBOL             ACC
+	-------            PROC               _warte100u
+	C:009CH            LINE#              23
+	C:009CH            LINE#              23
+	C:009CH            LINE#              26
+	C:00A4H            LINE#              30
+	C:00A4H            LINE#              30
+	-------            ENDPROC            _warte100u
+	-------            PROC               _LCDbefehl
+	C:00A5H            LINE#              36
+	C:00A5H            LINE#              36
+	C:00A5H            LINE#              40
+	C:00ADH            LINE#              41
+	C:00B1H            LINE#              42
+	C:00B3H            LINE#              43
+	C:00B6H            LINE#              45
+	C:00BBH            LINE#              46
+	C:00BDH            LINE#              47
+	C:00C0H            LINE#              62
+	C:00C5H            LINE#              63
+	C:00C5H            LINE#              63
+	-------            ENDPROC            _LCDbefehl
+	-------            PROC               _definierelcdsymbol
+	D:0008H            SYMBOL             pixelprozeile
+	D:000BH            SYMBOL             adr
+	D:000CH            SYMBOL             z
+	C:00C6H            LINE#              68
+	C:00C6H            LINE#              68
+	C:00CEH            LINE#              70
+	C:00E7H            LINE#              71
+	C:00F5H            LINE#              74
+	C:0112H            LINE#              75
+	C:0117H            LINE#              76
+	C:0117H            LINE#              76
+	-------            ENDPROC            _definierelcdsymbol
+	-------            PROC               initlcd
+	C:0118H            LINE#              81
+	C:0118H            LINE#              81
+	C:0118H            LINE#              83
+	C:011BH            LINE#              84
+	C:011EH            LINE#              85
+	C:0123H            LINE#              86
+	C:0126H            LINE#              87
+	C:0129H            LINE#              88
+	C:012EH            LINE#              89
+	C:0131H            LINE#              90
+	C:0134H            LINE#              91
+	C:0137H            LINE#              92
+	C:013AH            LINE#              93
+	C:013DH            LINE#              94
+	C:0140H            LINE#              95
+	C:0145H            LINE#              96
+	C:014AH            LINE#              97
+	C:014FH            LINE#              98
+	C:014FH            LINE#              98
+	-------            ENDPROC            initlcd
+	-------            PROC               loeschenlcd
+	C:0150H            LINE#              103
+	C:0150H            LINE#              103
+	C:0150H            LINE#              104
+	C:0155H            LINE#              104
+	-------            ENDPROC            loeschenlcd
+	-------            PROC               _charlcd
+	C:0156H            LINE#              110
+	C:0156H            LINE#              110
+	C:0156H            LINE#              115
+	C:015EH            LINE#              117
+	C:0162H            LINE#              118
+	C:0164H            LINE#              119
+	C:0168H            LINE#              121
+	C:016DH            LINE#              122
+	C:016FH            LINE#              123
+	C:0173H            LINE#              138
+	C:0178H            LINE#              139
+	C:0178H            LINE#              139
+	-------            ENDPROC            _charlcd
+	-------            PROC               _cursorpos
+	C:0179H            LINE#              147
+	C:0179H            LINE#              147
+	C:0179H            LINE#              148
+	C:0180H            LINE#              148
+	-------            ENDPROC            _cursorpos
+	-------            PROC               cursorhome
+	C:0181H            LINE#              153
+	C:0181H            LINE#              153
+	C:0181H            LINE#              154
+	C:0186H            LINE#              154
+	-------            ENDPROC            cursorhome
+	-------            PROC               _textlcd
+	D:000DH            SYMBOL             text
+	D:0010H            SYMBOL             zeile
+	C:0187H            LINE#              159
+	C:0187H            LINE#              159
+	C:018FH            LINE#              161
+	C:0199H            LINE#              162
+	C:01A3H            LINE#              163
+	C:01ADH            LINE#              164
+	C:01B7H            LINE#              165
+	C:01C2H            LINE#              166
+	C:01D9H            LINE#              167
+	C:01D9H            LINE#              167
+	-------            ENDPROC            _textlcd
+	-------            PROC               main
+	C:01DFH            LINE#              5
+	C:01DFH            LINE#              5
+	C:01DFH            LINE#              8
+	C:01E8H            LINE#              11
+	C:01E8H            LINE#              11
+	-------            ENDPROC            main
+	-------            ENDMOD             LCD_Anzeige
+	C:0081H            PUBLIC             ?C_START2
+	C:0003H            PUBLIC             IPGN1?C
+	C:002EH            PUBLIC             MV_PTR2C1?C
+	C:007CH            PUBLIC             ?printf0
+	N:00E8H            PUBLIC             TIM1_INIT
+	D:00A0H            PUBLIC             HPD_ADDR
+	N:007FH            PUBLIC             IDATALEN
+	N:00FFH            PUBLIC             _INITP2?
+	C:005FH            PUBLIC             ?puts
+	C:0061H            PUBLIC             __PUTS_NXT1__
+	C:004CH            PUBLIC             _putchar
+	C:0042H            PUBLIC             IPGN1INC?C
+	C:0046H            PUBLIC             __PGN1_INC__
+
+UNCALLED SEGMENTS:
+------------------
+    ?PR?cursorhome?LCD_ANZEIGE: Function cursorhome in file F:\DOKUMENTE UND DATEIEN\SCHULE UND S&
+O\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE.OBJ was not called
+    ?PR?initlcd?LCD_ANZEIGE: Function initlcd in file F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TGI\&
+TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE.OBJ was not called
+    ?PR?loeschenlcd?LCD_ANZEIGE: Function loeschenlcd in file F:\DOKUMENTE UND DATEIEN\SCHULE UND&
+ SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE.OBJ was not called
+    ?PR?_definierelcdsymbol?LCD_ANZEIGE: Function _definierelcdsymbol in file F:\DOKUMENTE UND DA&
+TEIEN\SCHULE UND SO\TGI\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE.OBJ was not called
+    ?PR?_textlcd?LCD_ANZEIGE: Function _textlcd in file F:\DOKUMENTE UND DATEIEN\SCHULE UND SO\TG&
+I\TGI-J2\ARTHUR BUSCH\C-SKRIPT\LCD_ANZEIGE\LCD_ANZEIGE.OBJ was not called
+
+----------------------
+SUGGESTED OPTIMIZATION
+----------------------
+Warning: 111 (6FH) data bytes in the range [00H-80H] are available for storage.
+         Consider using some of these for 'data' variables in your source files.
+
+
+LINK/LOCATE RUN COMPLETE,  NO ERROR FOUND.
+

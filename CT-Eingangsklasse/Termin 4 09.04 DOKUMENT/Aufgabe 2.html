@@ -1,0 +1,44 @@
+<html>
+<head><title>Aufgabe 2</Title>
+<script Language = JavaScript>
+	 function   Plus()
+{
+     	 document.B.Text4.value=parseInt(B.Text2.value)+parseInt(B.Text3.value)
+}
+	 function  Minus()
+{
+	 document.B.Text4.value=parseInt(B.Text2.value)-parseInt(B.Text3.value)
+}
+	</script>
+</head>
+<body>
+<h1> Aufgabe 2 </h1>
+<p>	1. Überprüfen Sie den vorgegebenen Quelltext für das Textfeld am Rechner.<br>
+	2. Beim Betätigen eines Buttons soll der Inhalt des Textfeldes gelöscht werden. <br>
+	   Ergänzen Sie entsprechend Ihre Web-Seite.<br>
+	3. Mit dem Anklicken eines weiteren Buttons ist ein beliebiger Text im Textfeld zu platzieren.<br>
+	4. Erstellen Sie eine neue Web-Seite, die zwei Textfelder und ein Button beinhaltet. <br>
+	   In ein Textfeld sollen Sie Zeichen eintippen. Sobald Sie den Button betätigen soll <br>
+	   der eingegebene Text im zweiten Textfeld angezeigt werden.<br>
+	5. Die beiden Textfelder dienen zur getrennten Eingabe von zwei Zahlen. <br>
+	   Sobald Sie  den Button betätigen soll die Summe der beiden eingegebenen Zahlen in einem dritten Textfeld ausgegeben werden.</p>
+
+
+<form Name="A">
+<input type= TEXT size=20 value= "Text eingeben" name="Textzeile">
+<input type= BUTTON value= "Uebertragen -->" onclick= document.A.Text1.value=A.Textzeile.value>
+<input type= TEXT size=20 value= "" name="Text1">
+</form>
+<br>
+<p>------------------------------------------------------------------------------------------------------</p>
+<br>
+<form Name="B">
+<input type= TEXT size=20 value= "0" name="Text2">
+<input type= TEXT size=20 value= "0" name="Text3">
+<input type= BUTTON value= "Summe" onclick= Plus()>
+<input type= BUTTON value= "Differenz" onclick= Minus()>
+<input type= TEXT size=20 value= "0" name="Text4">
+
+
+</body>
+</html>

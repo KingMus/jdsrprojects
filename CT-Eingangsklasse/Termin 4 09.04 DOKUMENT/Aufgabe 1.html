@@ -1,0 +1,22 @@
+<html>
+<head><title>Aufgabe 1</Title>
+</head>
+<body>
+<h1> Aufgabe 1 </h1>
+<p>  1. Erstellen Sie eine HTML-Seite mit einem Bild, das Sie innerhalb eines Form-Tags mit einem Namen versehen. <br>
+	Den Form-Tag ist ebenfalls mit einem Namen zu kennzeichnen. Das Bild soll durch ein anderes Bild ausgetauscht werden,<br>
+	wenn die Schaltfläche angeklickt wird. Verwenden Sie die zwei Bilder, die im Ordner Button abgelegt sind.<br>
+     2. Ergänzen Sie die Seiten mit einem zweiten Button. Mit dem Anklicken dieses Buttons soll das ursprüngliche Bild wieder zur Anzeige kommen.
+
+
+<form Name="A">
+
+	<img src= "Frage.jpg" Name="b">
+	<input type=BUTTON value= "Fahrrad" onclick=document.A.b.src="Fahrrad.jpg">
+  	<input type=BUTTON value= "Auto" onclick=document.A.b.src="Auto.jpg">
+	<input type=BUTTON value= "Bahn" onclick=document.A.b.src="Bahn.jpg">
+	<input type=BUTTON value= "Schiff" onclick=document.A.b.src="Schiff.jpg">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+MS-DOS LX51 CODE BANKING LINKER/LOCATOR V05.02.10.125
+
+
+INTER-MODULE CROSS-REFERENCE LISTING
+------------------------------------
+
+          NAME. . . . . . . . USAGE   MODULE NAMES
+          ----------------------------------------
+          ?C_START3 . . . . . CODE    [C3S]:  PROGRAMM_AUFGABE_1_V
+          HPD_ADDR  . . . . . DATA    [HPD]:  C3S
+          i . . . . . . . . . DATA    [PROGRAMM_AUFGABE_1_V]: 
+          IDATALEN  . . . . . NUMBER  [_C_IDATALEN]:  C3S
+          main  . . . . . . . CODE    [PROGRAMM_AUFGABE_1_V]:  C3S
+          TIM1_INIT . . . . . NUMBER  [** UNRESOLVED **]:
+          XSTACKLEN . . . . . NUMBER  [** UNRESOLVED **]:
+          _INITP2?  . . . . . NUMBER  [_C_IDATALEN]:  C3S
+          _STACK  . . . . . . IDATA   [PROGRAMM_AUFGABE_1_V]:  C3S
